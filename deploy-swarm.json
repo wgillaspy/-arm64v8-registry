@@ -1,0 +1,44 @@
+{
+  "Name": "registry",
+  "TaskTemplate": {
+    "ContainerSpec": {
+      "Image": "arm64v8/registry",
+      "Mounts": [],
+      "Env": [ ]
+    },
+    "Networks": [
+      {
+        "Target": "swarm-network"
+      }
+    ],
+    "Placement": {
+      "Constraints": [
+      ]
+    },
+    "RestartPolicy": {
+      "Condition": "any",
+      "Delay": 10000000000,
+      "MaxAttempts": 10
+    }
+  },
+  "Mode": {
+    "Replicated": {
+      "Replicas": 1
+    }
+  },
+  "UpdateConfig": {
+    "Delay": 30000000000,
+    "Parallelism": 1,
+    "FailureAction": "pause"
+  },
+  "EndpointSpec": {
+    "Ports": [
+      {
+        "Protocol": "tcp",
+        "PublishedPort": 5000,
+        "TargetPort": 5000
+      }
+    ]
+  }
+}
+
