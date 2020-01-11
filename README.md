@@ -1,2 +1,2 @@
-# -arm64v8-registry
-Docker registry for the swarm.
+# arm64v8-registry
+Local docker registry for the swarm.
