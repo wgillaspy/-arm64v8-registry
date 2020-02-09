@@ -4,7 +4,8 @@
     "ContainerSpec": {
       "Image": "arm64v8/registry",
       "Mounts": [],
-      "Env": [ ]
+      "Env": [ ],
+      "Command" : "wget http://192.168.1.101:8080/jnlpJars/agent.jar && java -jar agent.jar -jnlpUrl http://192.168.1.101:8080/computer/jenkins-bc-did/slave-agent.jnlp -secret fa0532798d4707cb0c39581b6e1b882c2a9dc1178276fe61ad5f9119a5ca661b -workDir \"/tmp/\""
     },
     "Networks": [
       {
