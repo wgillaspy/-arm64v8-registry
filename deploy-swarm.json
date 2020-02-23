@@ -5,7 +5,7 @@
       "Image": "arm64v8/registry",
       "Mounts": [],
       "Env": [ ],
-      "Command" : "wget http://10.1.0.101:8080/jnlpJars/agent.jar && java -jar agent.jar -jnlpUrl http://10.1.0.101:8080/computer/jenkins-bc-did/slave-agent.jnlp -secret fa0532798d4707cb0c39581b6e1b882c2a9dc1178276fe61ad5f9119a5ca661b -workDir \"/tmp/\""
+      "Command" : ["wget http://10.1.0.101:8080/jnlpJars/agent.jar && java -jar agent.jar -jnlpUrl http://10.1.0.101:8080/computer/jenkins-bc-did/slave-agent.jnlp -secret fa0532798d4707cb0c39581b6e1b882c2a9dc1178276fe61ad5f9119a5ca661b -workDir \"/tmp/\""]
     },
     "Networks": [
       {
