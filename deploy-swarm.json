@@ -12,10 +12,6 @@
         "Target": "swarm-network"
       }
     ],
-    "Placement": {
-      "Constraints": [
-      ]
-    },
     "RestartPolicy": {
       "Condition": "any",
       "Delay": 10000000000,
